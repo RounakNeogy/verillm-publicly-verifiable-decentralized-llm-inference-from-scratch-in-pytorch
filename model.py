@@ -13,8 +13,10 @@ def build_char_vocab(corpus):
     itos = {i: ch for i, ch in enumerate(chars)}
     return {'stoi': stoi, 'itos': itos}
 
-# Step 2 - encode_string (not yet solved)
-# TODO: implement
+# Step 2 - encode_string
+def encode_string(text, vocab):
+    stoi = vocab['stoi']
+    return [stoi[ch] for ch in text]
 
 # Step 3 - decode_ids (not yet solved)
 # TODO: implement
