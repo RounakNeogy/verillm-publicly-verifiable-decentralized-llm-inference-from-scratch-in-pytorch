@@ -18,8 +18,10 @@ def encode_string(text, vocab):
     stoi = vocab['stoi']
     return [stoi[ch] for ch in text]
 
-# Step 3 - decode_ids (not yet solved)
-# TODO: implement
+# Step 3 - decode_ids
+def decode_ids(ids, vocab):
+    itos = vocab['itos']
+    return ''.join(itos[i] for i in ids)
 
 # Step 4 - embed_tokens (not yet solved)
 # TODO: implement
